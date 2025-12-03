@@ -190,7 +190,7 @@
     color: #fff;
 }
 
-/* SIMPLE RESPONSIVE LAYOUT FOR DASHBOARD */
+/* RESPONSIVE LAYOUT FOR DASHBOARD */
 @media (max-width: 900px) {
     /* stack the three circles */
     .progress-section {
