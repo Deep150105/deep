@@ -1,60 +1,78 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Black Goose Bakery</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Stint+Ultra+Expanded" rel="stylesheet">
-<style>
-@import url(bakery-styles.css);
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTB Account - Welcome</title>
+    <link rel="stylesheet" href="css files/index.css">
 </head>
-
 <body>
-<div id="container">
-<header>
-  <nav>
-    <ul>
-      <li><a href="">Menu</a></li>
-      <li><a href="">News</a></li>
-      <li><a href="">About</a></li>
-      <li><a href="">Contact</a></li>
-    </ul>
-  </nav>  
-  <h1><img src="images/bgb_logo.png" alt="Black Goose Bakery"></h1>
-  <p>The delicious baked goods you love at Black Goose Bistro...now available to go!</p>
-</header>
+    <div class="container">
+        <!-- TOP NAVBAR -->
+        <header> 
+            <nav class="top-nav">
+                <div class="nav-left">
+                    <img src="images/htb-account.svg" alt="HTB Logo" class="nav-logo">
+                </div>
+                <div class="nav-right">
+                    <button class="nav-icon">?</button>
+                    <button class="nav-icon">⋮⋮⋮</button>
+                    <img src="images/htb logo.svg" alt="User" class="nav-user">
+                </div>
+            </nav>
+            
 
-<main>
-  <h2>Fresh from the Oven</h2>
-  <h3>Breads</h3>
-  <p><img src="images/bread.png" alt="round loaf of bread on cutting board"> Our breads are made daily from highest-quality whole grain flour, water, salt, and yeast or sourdough starter. Simply and naturally, and never any preservatives. Patience is key to achieving the proper level of fermentation and baking each loaf to perfection. Available in whole grain, sourdough, olive loaf, classic rye, and potato-onion.</p>
-  <p class="more"><a href="">Learn more about our baking process...</a></p>
+            <!-- TABS -->
+            <div class="tabs">
+                <button class="tab active">Product Settings</button>
+                <button class="tab">User Settings</button>
+                <button class="tab">Security Settings</button>
+            </div>
+        </header>
 
-  <h3>Muffins</h3>
-  <p><img src="images/muffin.png" alt="one chocolate chip muffin"> Every day, we offer a large selection of muffins, including blueberry, multi-berry, bran, corn, lemon-poppyseed, and chocolate. Our muffins are made from scratch each day. Stop by to see our seasonal muffin flavors!</p>
-  <p class="more"><a href="">Learn more about how we make our muffins...</a></p>
-</main>
+        <!-- MAIN CONTENT -->
+        <main class="main-container">
+            <div class="welcome-section">
+                <h1>Welcome Dream004,</h1>
+                <p>Access the Hack The Box multiverse and develop yourself as a cybersecurity professional.</p>
+            </div>
 
-<aside>
-  <h2>Hours</h2>
-  <p><span class="day">Monday:</span> 5am to 3pm</p>
-  <p><span class="day">Tuesday:</span> 5am to 3pm</p>
-  <p><span class="day">Wednesday:</span> 5am to 3pm</p>
-  <p><span class="day">Thursday:</span> 5am to 3pm</p>
-  <p><span class="day">Friday:</span> 5am to 3pm</p>
-  <p><span class="day">Saturday:</span> 6am to 4pm</p>
-  <p><span class="day">Sunday:</span> 6am to 4pm</p>
-</aside>
+            <!-- PRODUCT CARDS -->
+            <div class="product-cards">
+                <!-- HTB ACADEMY CARD -->
+                <div class="product-card academy-card">
+                    <div class="card-text">
+                        <p class="card-label">HTB Academy</p>
+                        <h2>Learn and get certified</h2>
+                        <p class="card-description">
+                            Begin or advance your journey in cybersecurity with our online learning paths
+                            and earn industry certifications to prove your expertise.
+                        </p>
+                        <a href="./html files/dashboard.html"><button class="btn-card">Start learning</button></a>
+                    </div>
+                    <div class="card-image">
+                        <img src="images/academy.svg" alt="Academy Character">
+                    </div>
+                </div>
 
-<footer>
-<p>All content copyright &copy; 2017, Black Goose Bistro.</p>
-  <div id="award"> 
-    <img src="images/award.png" alt="Farmers' Market Award"> 
-  </div> 
-</footer>
-
-</div> <!-- end #container div -->
-
+                <!-- HTB CTF CARD -->
+                <div class="product-card labs-card">
+                    <div class="card-text">
+                        <p class="card-label">HTB CTF</p>
+                        <h2>Compete in Capture The Flag</h2>
+                        <p class="card-description">
+                            Join competitive hacking events and test your skills against others.
+                            Participate in live CTF competitions, solve challenges, and climb the leaderboard!
+                        </p>
+                        <a href="./html files/ctf.html"><button class="btn-card">Start competing</button></a>
+                    </div>
+                    <div class="card-image">
+                        <img src="images/ctf.svg" alt="CTF Character">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
+

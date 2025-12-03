@@ -1,0 +1,222 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    min-height: 100vh;
+}
+
+/* TOP NAVBAR */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #161b22;
+    border-bottom: 1px solid #30363d;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    width: 150px;
+    height: auto;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-icon {
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border: 1px solid #30363d;
+    border-radius: 4px;
+    color: #c9d1d9;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.nav-icon:hover {
+    background-color: #21262d;
+}
+
+.nav-user {
+    width: 35px;
+    height: 35px;
+    background-color: #30363d;
+    border-radius: 50%;
+}
+
+/* TABS */
+.tabs {
+    display: flex;
+    padding: 0 40px;
+    background-color: #0d1117;
+    border-bottom: 1px solid #30363d;
+}
+
+.tab {
+    padding: 15px 30px;
+    background-color: transparent;
+    border: none;
+    color: #8b949e;
+    cursor: pointer;
+    font-size: 14px;
+    border-bottom: 2px solid transparent;
+}
+
+.tab.active {
+    color: #ffffff;
+    border-bottom: 2px solid #9fef00;
+}
+
+.tab:hover {
+    color: #c9d1d9;
+}
+
+/* MAIN CONTAINER */
+.main-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+/* WELCOME SECTION */
+.welcome-section {
+    margin-bottom: 40px;
+}
+
+.welcome-section h1 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.welcome-section p {
+    font-size: 16px;
+    color: #8b949e;
+}
+
+/* PRODUCT CARDS */
+.product-cards {
+    display: flex;
+    gap: 30px;
+}
+
+.product-card {
+    flex: 1;
+    background-color: #161b22;
+    border-radius: 7px;
+    padding: 40px;
+    border: 1px solid #30363d;
+    position: relative;
+    overflow: hidden;
+    min-height: 350px;
+}
+
+/*  gradients  */
+.academy-card {
+    background: linear-gradient(135deg, #1a2332 0%, #243447 100%);
+}
+
+.labs-card {
+    background: linear-gradient(135deg, #2a1a32 0%, #3f2447 100%);
+}
+
+.card-text {
+    max-width: 55%;
+    position: relative;
+    z-index: 2;
+}
+
+.card-label {
+    font-size: 12px;
+    color: #8b949e;
+    margin-bottom: 10px;
+}
+
+.card-text h2 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.card-description {
+    font-size: 14px;
+    color: #c9d1d9;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.card-image {
+    position: absolute;
+    top: 1px;
+    right: -49px;
+    width: 350px;
+    height: 350px;
+    z-index: 1;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.btn-card {
+    padding: 12px 30px;
+    background-color: #9fef00;
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn-card:hover {
+    background-color: #8cd400;
+}
+
+/*  MEDIA QUERY FOR RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+    .main-container {
+        padding: 40px 20px;
+    }
+
+    .product-cards {
+        flex-direction: column;
+    }
+
+    .product-card {
+        padding: 30px 20px;
+    }
+
+    .card-text {
+        max-width: 100%;
+    }
+
+    .card-image {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 220px;
+        height: 220px;
+        margin: 20px auto 0;
+    }
+}
+
